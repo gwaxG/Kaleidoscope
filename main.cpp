@@ -1,6 +1,5 @@
-#pragma once
-#include <iostream>;
-#include "parser.h";
+#include <iostream>
+#include "include/parser.h"
 
 using namespace std;
 

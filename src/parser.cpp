@@ -1,19 +1,17 @@
-#pragma once
 #include <iostream>
 #include <vector>
 #include <map>
 #include <utility>
-#include "scanner.h";
-#include "parser.h";
+#include "scanner.h"
+#include "parser.h"
 
 /// <summary>
-/// Parser.
+/// Parser
 /// </summary>
 
-
-auto LHS = std::make_unique<VariableExprAST>("x");
-auto RHS = std::make_unique<VariableExprAST>("y");
-auto Result = std::make_unique<BinaryExprAST>('+', std::move(LHS), std::move(RHS));
+inline auto LHS = std::make_unique<VariableExprAST>("x");
+inline auto RHS = std::make_unique<VariableExprAST>("y");
+inline auto Result = std::make_unique<BinaryExprAST>('+', std::move(LHS), std::move(RHS));
 
 /// CurTok/getNextToken - Provide a simple token buffer.  CurTok is the current
 /// token the parser is looking at.  getNextToken reads another token from the

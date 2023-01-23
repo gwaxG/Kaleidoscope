@@ -2,14 +2,12 @@
 #include <iostream>
 #include <vector>
 #include <utility>
-#include <map>;
+#include <memory>
+#include <map>
 
 // AST
 /// ExprAST - Base class for all expression nodes.
-class ExprAST {
-public:
-	virtual ~ExprAST() {}
-};
+class ExprAST { };
 
 /// NumberExprAST - Expression class for numeric literals like "1.0".
 class NumberExprAST : public ExprAST {

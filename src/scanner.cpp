@@ -1,6 +1,5 @@
-#pragma once
 #include <iostream>
-#include "scanner.h";
+#include "scanner.h"
 
 /// gettok - Return the next token from standard input.
 int gettok() {
